@@ -14,7 +14,7 @@ describe('template spec', () => {
     cy.wait("@registerAction");
   })
 
-  it.only('does also pass when intercepted', () => {
+  it('also passes when intercepted', () => {
     // run the test with intercepting the server action request
     // the server action will return undefined and the connection will be closed
     // run the test without intercepting the response of the server action request
